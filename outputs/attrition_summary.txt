@@ -1,0 +1,17 @@
+HR Attrition Summary
+========================
+Total Employees: 1470
+Overall Attrition Rate: 16.12%
+Department Attrition Rates:
+- Sales: 20.6%
+- Research & Development: 13.8%
+- Human Resources: 19.0%
+Top Risk Roles:
+- Sales Representative: 39.8%
+- Laboratory Technician: 23.9%
+- Human Resources: 23.1%
+- Sales Executive: 17.5%
+- Research Scientist: 16.1%
+Avg Income (Leavers): 4787.09
+Avg Income (Stayers): 6832.74
+Overtime Attrition Rate: 30.5%

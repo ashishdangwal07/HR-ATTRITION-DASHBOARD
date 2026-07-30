@@ -1,38 +1,46 @@
-# HR Attrition Analysis
-## What This Is
+# HR Attrition Dashboard
 
-Looked at 1,470 employees to figure out why people are leaving. Company losing about 237 people per year - that's 16%. Wanted to see which departments are bleeding people, which roles have it worst, and if it's money or just bad management.
+## Executive Summary
+This repository presents a professional HR attrition analysis based on 1,470 employee records. The project identifies the primary drivers of employee turnover and translates the findings into clear, business-ready insights for HR and leadership teams.
 
-## The Data
+## Why This Project Matters
+Attrition affects workforce stability, recruiting cost, and team performance. This analysis explores department-level risk, role-specific turnover, compensation patterns, and workload-related factors to support stronger retention strategies.
 
-1,470 employee records. 237 quit. Looked at department, role, salary, age, how long they've been here, if they work overtime, job satisfaction scores. Basic HR stuff.
+## Key Insights
+- Overall attrition rate: 16.1%
+- Highest-risk department: Sales at approximately 20.6%
+- Elevated turnover also appears in Human Resources at about 19.0%
+- Research & Development remains comparatively more stable at about 13.8%
+- Employees who leave earn less on average than those who stay
+- Overtime is strongly associated with higher turnover risk
 
-## What I Found
+## What’s Included
+- Raw employee dataset for analysis
+- Cleaned Excel workbook for structured review
+- Power BI dashboard package for visualization
+- Executive summary for business stakeholders
 
-Sales department loses people the fastest - about 1 in 5 quit. HR loses about 1 in 5 too. R&D is more stable, only losing like 14% which is still high but better.
+## Repository Files
+- [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) — concise executive summary of the analysis
+- [HR_CLEANED_DATA.xlsx](HR_CLEANED_DATA.xlsx) — cleaned Excel workbook
+- [HR_Attrition_Dashboard_pbix.zip](HR_Attrition_Dashboard_pbix.zip) — Power BI dashboard file
+- [WA_Fn-UseC_-HR-Employee-Attrition.csv](WA_Fn-UseC_-HR-Employee-Attrition.csv) — raw dataset
 
-People who leave are younger (average 33 vs 37 for people who stay). They're paid less too - leaving employees made around 4.7L while stayers made 6.8L. Overtime kills it - if you're working extra hours, way more likely to bounce.
+## Recommended Actions
+1. Review compensation and retention practices in Sales and HR.
+2. Reduce excessive overtime in high-risk teams.
+3. Investigate role-specific turnover concerns, especially for Sales Representatives and Laboratory Technicians.
+4. Monitor attrition trends regularly using the dashboard to evaluate progress.
 
-Lab Techs leave a lot. Sales Reps even more. 
+## Tools and Workflow
+- Data preparation and exploratory analysis
+- Excel-based cleaning and review
+- Power BI for dashboard visualization
+- Markdown documentation for clear project communication
 
-The pattern is clear - pay people more and don't kill them with overtime, they stay. Seems obvious but the numbers back it up.
+## Run the Analysis
+From the project folder, run:
+- `python analysis.py` to generate the summary report
+- `python -m unittest discover -s tests -v` to run the automated checks
 
-## Files
-
-**hr_attrition_dashboard_reference.html** - Open this in browser. It's the Power BI dashboard. All the charts and filters are there.
-
-**HR_CLEANED_DATA.xlsx** - Cleaned data with pivot tables. Department breakdown, salary analysis, all that.
-
-**WA_Fn-UseC_-HR-Employee-Attrition.csv** - Raw data file. 1,470 rows.
-
-**HR_Attrition_Dashboard_pbix.zip** - Actual Power BI file if you want to mess with it. Has all 9 charts, slicers for department/gender/overtime.
-
-## How I Built This
-
-Pulled the CSV into Python, used Pandas to group by department, role, salary ranges. Calculated percentages. Then built it all out in Power BI - made KPI cards, some bar charts showing which roles are risky, line chart to see the age trend, pie chart for gender split.
-
-## Real Talk
-
-Sales is the problem department. Either fix compensation there or fix the work culture because you're losing 1 out of every 5 people. R&D has it figured out somehow - way lower attrition. So either copy what they're doing or just pay Sales people more.
-
-Overtime is evil for retention. People working extra hours are way more likely to leave. That's worth fixing.
+The analysis output is written to the outputs folder as a text report.
